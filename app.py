@@ -16,9 +16,9 @@ app.secret_key = 'your_secret_key'  # Needed for session cart
 
 # Sample watercolor prints
 products = [
-    Product(1, "State Street", "Restaurants on State Street", 8, "images/statestreet.jpg"),
-    Product(2, "1195 Chapel Street", "The back of 1195 Chapel Street", 8, "images/1195 chapel street.jpg"),
-    Product(3, "Law Firm", "Law firm", 8, "images/lawfirm.jpg"),
+    Product(1, "State Street", "Restaurants on State Street", 8, "static/images/statestreet.jpg"),
+    Product(2, "1195 Chapel Street", "The back of 1195 Chapel Street", 8, "static/images/1195 chapel street.jpg"),
+    Product(3, "Law Firm", "Law firm", 8, "static/images/lawfirm.jpg"),
 ]
 
 @app.route('/')
@@ -33,7 +33,7 @@ def marketplace():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
+
 
 
 
